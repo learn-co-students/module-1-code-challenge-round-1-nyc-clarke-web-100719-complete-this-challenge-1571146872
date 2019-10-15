@@ -9,6 +9,23 @@ class Review
       @@all
     end
 
+    #Remove bad reviews
+    def self.take_bribe(restaurant, dollar_amount)
+        if dollar_amount > 5000
+            @@all = Review.all.select { |review|
+                if review.restaurant == restaurant
+                    review.rating >= 4
+                else
+                    true
+                end
+            }
+            return "Check your rating now"
+        else
+        "You think I'm going to compromise the moral integrity of this platform for your dirty money?"
+        end
+    end
+
+
     #Instance methods
 
     #Init    

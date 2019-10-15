@@ -60,7 +60,13 @@ class Restaurant
     max_review
   end
 
-  
+  #Pay Review Website to remove bad reviews
+  def bribe(dollar_amount)
+
+    Review.take_bribe(self, dollar_amount)
+
+  end
+
 
 
 
