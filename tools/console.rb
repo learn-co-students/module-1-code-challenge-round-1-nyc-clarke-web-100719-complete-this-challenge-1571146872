@@ -21,6 +21,7 @@ rv2 = c2.add_review(r1, 'Yuck not my thing', 1)
 rv3 = c3.add_review(r1, 'This company is immoral', 3)
 rv4 = c1.add_review(r3, 'Quality but expensive', 3)
 rv5 = c1.add_review(r1, 'Changed my mind, found a rat', 1)
+rv6 = c1.add_review(r2, 'Pretty average', 3)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line

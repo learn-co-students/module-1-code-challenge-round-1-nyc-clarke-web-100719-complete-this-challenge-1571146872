@@ -30,6 +30,10 @@ class Customer
     reviews.count
   end
 
+  def top_three_reviews #finds the top three rated reviews from customer
+    reviews.max_by(3) { |review| review.rating }
+  end
+
   def self.all
     @@all
   end

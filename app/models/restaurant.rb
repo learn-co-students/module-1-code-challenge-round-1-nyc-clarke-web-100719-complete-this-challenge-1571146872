@@ -25,6 +25,10 @@ class Restaurant
     reviews.max_by { |review| review.content.length }
   end
 
+  def shortest_review #opposite of #longest_review 
+    reviews.min_by { |review| review.content.length }
+  end
+
   def self.all
     @@all
   end
