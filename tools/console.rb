@@ -20,7 +20,7 @@ c4 = Customer.new("Gene","Lee")
 rv1 = Review.new(c1, r1, 5, "It was average")
 rv2 = Review.new(c2, r4, 4, "It was average")
 rv3 = Review.new(c3, r2, 2, "It was average")
-rv4 = Review.new(c4, r3, 4, "It was average")
+rv4 = Review.new(c4, r3, 1, "It was average")
 
 
 c1.add_review(r2, "It was k", 1)
