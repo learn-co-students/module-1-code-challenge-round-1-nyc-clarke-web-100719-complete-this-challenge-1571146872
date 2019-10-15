@@ -1,19 +1,24 @@
 class Review
     attr_reader :customer, :restaurant, :rating, :content
-    @@all = []
+   
+    #Class Methods
 
+    #All instances of this class
+    @@all = []
     def self.all
       @@all
     end
 
+    #Instance methods
 
-  def initialize(customer, restaurant, rating, content)
-    @customer = customer
-    @restaurant = restaurant
-    @rating = rating
-    @content = content
-    self.class.all << self 
-  end
+    #Init    
+    def initialize(customer, restaurant, rating, content)
+        @customer = customer
+        @restaurant = restaurant
+        @rating = rating
+        @content = content
+        self.class.all << self 
+    end
 
 
 
